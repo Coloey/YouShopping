@@ -1,0 +1,4 @@
+<!--pages/login/index.wxml-->
+<view>
+    <button type="primary" plain bindtap="HandleUserProfile">登录</button>
+</view>

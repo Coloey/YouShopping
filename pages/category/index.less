@@ -1,0 +1,65 @@
+/* pages/category/index.wxss */
+page {
+    height: 100%;
+}
+.cates {
+    height: 100%;
+    .cates_container {
+        // less中使用calc注意
+        height: ~'calc( 100vh - 90rpx )';
+        display: flex;
+        .leftMenu {
+            flex:2;
+            .menu_item {
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25rpx;
+
+            }
+            .active {
+                color: #3fc1c9;
+                border-left: 5rpx solid currentColor;
+
+            }
+            
+        }
+        .rightContent {
+            flex:5;
+            .goods_group {
+                .goods_title {
+                    height: 80rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .delimiter{
+                        color:#ccc
+
+                    }
+                    .title {
+
+                    }
+
+                }
+                .goods_list {
+                    display: flex;
+                    flex-wrap: wrap;//不够一行换行
+                    navigator {
+                        width: 33.33%;
+                        
+                        text-align: center;
+                        image {
+                            width: 50%;
+                        }
+                        .good_name {
+
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,2 @@
+<!--pages/auth/index.wxml-->
+<button bindtap="getUserProfile" type="primary" plain>授权</button>

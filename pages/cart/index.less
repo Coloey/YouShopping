@@ -1,0 +1,180 @@
+/* pages/cart/index.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+.receive_address_row {
+    .address_btn {
+        padding: 20rpx 0;
+        button {
+            font-weight: 500;
+            
+        }
+    }
+    .receive_address {
+         //background: linear-gradient(#e66465, #9198e5);
+        background: linear-gradient(45deg,var(--themeColor),#a8d8ea);
+        border-radius: 15rpx;
+        margin: 20rpx;
+        .address_Info {
+            display: flex;
+            padding: 20rpx 20rpx;
+            .user_info {
+                flex:3;
+        
+            }
+            .user_telNumber {
+                flex:2;
+                display: flex; 
+                justify-content: center;
+                align-items: flex-start;
+            
+            }
+        
+        }
+
+    }
+    
+}
+.cart_content {
+    .cart_title {
+        border-radius: 15rpx;
+        margin: 0 20rpx;
+        font-size: 45rpx;
+        padding:20rpx 20rpx;
+        border: 2rpx solid #91d4ec;
+        //border-bottom: 2rpx solid var(--themeColor);
+
+    }
+    
+    .cart_main {
+        position: relative;
+        .empty_cart {
+           position: absolute;
+           left: 50%;
+           transform:translateX(-50%);
+           //top: 50%;
+           width: 80%;
+           margin-top: 100rpx;
+    
+        }
+        .cart_item {
+            display: flex;
+            margin: 10rpx 10rpx;
+            border-radius: 15rpx;
+            background-color: #fff;
+            .cart_chk_wrap {
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                    
+                
+            }
+            .cart_img_wrap {
+                flex:2;
+                image {
+                    width: 80%;
+                    border-radius: 15rpx;
+
+                }
+
+            }
+            .cart_info_wrap {
+                flex:4;
+                display:flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: space-around;
+                .goods_info{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2; 
+
+
+
+                }
+                .goods_price {
+                    color: #3d84a8;
+    
+                    font-weight: 600;
+                    font-size: 32rpx;
+
+                }
+                .cart_num_tool {
+                    display: flex;
+                    position: absolute;
+                    bottom:20rpx;
+                    right:0;
+                    .nums_edit {
+                        flex:1;
+                        width: 40rpx;
+                        height: 40rpx;
+                        padding:3rpx 3rpx;
+                        border: 1rpx solid #ccc;
+                        border-radius: 3rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                            
+    
+                    }
+                    .goods_num {
+                        flex:1;
+                        text-align: center;
+                        margin:0 8rpx;
+    
+                    }
+                }
+
+            }
+            
+
+            
+        }
+
+    }
+}
+.footer_tool {
+    display: flex;
+    width: 100%;
+    bottom:0;
+    position: fixed;
+    border-top: 1rpx solid #ccc;
+   
+    .all_chk_wrap {
+        flex:4;
+        display: flex;
+        align-items: center;
+        padding-left: 10rpx;
+
+
+    }
+    .total_price_wrap {
+        flex:3;
+        text-align: right;
+        padding-right: 15rpx;
+        .total_price {
+            font-size: 35rpx;
+            .total_price_text {
+                font-size: 35rpx;
+                color: #3d84a8
+
+            }
+        }
+    }
+    .order_pay_wrap {
+        border-radius: 15rpx;
+        margin: 5rpx;
+        flex:2;
+        font-size: 35rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a8d8ea;
+
+    }
+}
+

@@ -1,0 +1,35 @@
+view {
+  color: var(--themeColor);
+}
+.index_swiper {
+  width: 100%;
+  height: 340rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cateList {
+  display: flex;
+}
+.index_cateList navigator {
+  flex: 1;
+  position: relative;
+  padding: 20rpx;
+}
+.index_cateList navigator image {
+  width: 100%;
+}
+.index_floorList {
+  padding-top: 25rpx;
+}
+.index_floorList .floorBody .floorList .floorList_body navigator {
+  float: left;
+  width: 33.33%;
+}
+.index_floorList .floorBody .floorList .floorList_body navigator image {
+  width: 100%;
+  height: 100%;
+}
+.index_floorList .floorBody .floorList .floorList_body navigator:nth-last-child(-n+4) {
+  height: 27.727vw;
+}

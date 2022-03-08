@@ -1,0 +1,20 @@
+/* pages/order/index.wxss */
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #dedede;
+}
+.order_main .order_item .order_num_row {
+  display: flex;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row {
+  display: flex;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row .order_price_value {
+  color: #07689f;
+}
+.order_main .order_item .order_time_row {
+  display: flex;
+  justify-content: space-between;
+}

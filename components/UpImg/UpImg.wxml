@@ -1,0 +1,10 @@
+<!--components/UpImg/UpImg.wxml-->
+<view class="up_img_wrap">
+  <view class="up_img" wx:for="{{imgs}}" wx:key="*this">
+    <image src="{{item}}">
+    </image>
+    <view class="iconfont" bindtap="handleDelImg" data-index="{{index}}">
+        <icon type="clear" size="23" color="red"></icon>
+    </view>
+  </view>
+</view>

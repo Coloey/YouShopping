@@ -1,0 +1,19 @@
+<!--pages/feedback/index.wxml-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange"></Tabs>
+<view class="fb_main">
+    <view class="fb_tips">
+        <view class="fb_item">功能建议</view>
+        <view class="fb_item">购买遇到的问题</view>
+        <view class="fb_item">性能问题</view>
+        <view class="fb_item">其他</view>
+    </view>
+   <view class="fb_content">
+       <textarea value="{{textVal}}" cols="30" rows="10"placeholder="请描述一下您的问题" bindinput="handleInput" value="{{textVal}}"></textarea>
+       <view class="fb_tool">
+           <button bindtap="handleChoose">+</button>
+           <!-- 父组件向子组件传递数据  子组件向父组件传递数据出发自定义方法-->
+            <UpImg imgs="{{imgs}}" bindremoveImgs="removeImgs"></UpImg> 
+       </view>
+   </view>
+   <view class="fb_btn" bindtap="handleSubmit">提交</view>
+</view>
